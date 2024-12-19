@@ -1,0 +1,60 @@
+# Node modules (if applicable)
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Compiled files
+*.class
+*.pyc
+*.pyo
+*.exe
+*.dll
+*.so
+*.o
+*.out
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.old
+
+# Build directories
+dist/
+build/
+
+# Cache directories
+.cache/
+*.cache
+
+# Exclude specific files or directories
+# Uncomment if you want to exclude images or other assets
+# images/
+# css/
+# fonts/
+
+# PHP specific
+*.env
+vendor/
+
+# Exclude specific HTML files (if needed)
+# Uncomment if you want to exclude specific HTML files
+# blog.html
+# index-main.html
+# index-particles.html
+# index-videobg.html
+# single-blog.html
