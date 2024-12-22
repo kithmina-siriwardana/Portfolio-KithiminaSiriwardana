@@ -471,7 +471,7 @@ body.loaded p {
   width: 100%;
   height: 100%;
   background-color: #000;
-  opacity: 0.5;
+  opacity: 0.6;
   z-index: 1;
 }
 
@@ -625,6 +625,51 @@ body.loaded p {
   -o-transition: width 1.5s ease;
   transition: width 1.5s ease;
   width: 0;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  gap: 20px; /* Space between items */
+  text-align: center;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item i {
+  font-size: 30px; /* Smaller icon size */
+  margin-bottom: 10px;
+}
+
+.skill-item h4 {
+  font-size: 14px; /* Smaller text size */
+  font-weight: 600;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: 1fr; /* 1 item per row on small screens */
+  }
 }
 
 /*============ 6. Services Section ============*/
@@ -1209,6 +1254,11 @@ footer p {
   #banner .banner-text .typed-cursor {
     font-size: 30px;
   }
+
+  .about-intro p {
+    text-align: justify;
+  }
+
   #about .about-info-container .about-info {
     text-align: center;
     margin-bottom: 60px;
@@ -1226,6 +1276,41 @@ footer p {
   .wave {
     height: 25px;
   }
+}
+
+/*============ 14. Alerts ============*/
+
+.alert {
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 4px;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.main-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
 
 /*Max Width 768px*/

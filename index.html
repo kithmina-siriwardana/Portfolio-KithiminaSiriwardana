@@ -38,6 +38,18 @@
       href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900|Poppins:400,500,600"
       rel="stylesheet"
     />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Email Service -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script src="./js/email.js"></script>
   </head>
   <body>
     <!--Preloader Start-->
@@ -53,7 +65,7 @@
       <div class="container">
         <!--Logo-->
         <a class="navbar-brand" href="#"
-          ><img src="images/logo/logo copy.png" alt="logo"
+          ><img src="images/logo/logo.png" alt="logo"
         /></a>
 
         <button
@@ -175,56 +187,30 @@
               <!--about skills section-->
               <div class="col-lg-5 col-md-12 about-skills">
                 <h3 class="text-uppercase">Skills</h3>
-                <div class="progress-box">
-                  <p>html5 & css3 <span class="pull-right">90%</span></p>
-                  <div class="progress">
-                    <!--progressbar-->
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="90"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
+                <div class="skills-grid">
+                  <div class="skill-item">
+                    <i class="fab fa-js" style="color: #f7df1e"></i>
+                    <h4>JavaScript</h4>
                   </div>
-                </div>
-                <div class="progress-box">
-                  <p>PHP <span class="pull-right">82%</span></p>
-                  <div class="progress">
-                    <!--progressbar-->
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="82"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
+                  <div class="skill-item">
+                    <i class="fab fa-react" style="color: #61dafb"></i>
+                    <h4>React</h4>
                   </div>
-                </div>
-                <div class="progress-box">
-                  <p>Wordpress <span class="pull-right">87%</span></p>
-                  <div class="progress">
-                    <!--progressbar-->
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="87"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
+                  <div class="skill-item">
+                    <i class="fab fa-node-js" style="color: #68a063"></i>
+                    <h4>Node.js</h4>
                   </div>
-                </div>
-                <div class="progress-box">
-                  <p>Javascript <span class="pull-right">95%</span></p>
-                  <!--progressbar-->
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="95"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
+                  <div class="skill-item">
+                    <i class="fab fa-html5" style="color: #e34c26"></i>
+                    <h4>HTML5</h4>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fab fa-aws" style="color: #ff9900"></i>
+                    <h4>AWS</h4>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fab fa-git" style="color: #f05032"></i>
+                    <h4>Git</h4>
                   </div>
                 </div>
               </div>
@@ -250,16 +236,16 @@
     <!--Portfolio Section Start-->
     <section id="portfolio" class="wave-primary">
       <div class="container">
-        <div class="portfolio-header padbtm-60">
+        <div class="portfolio-header padbtm-40">
           <h2 class="text-uppercase">Portfolio</h2>
-          <div class="portfolio-filter">
+          <!-- <div class="portfolio-filter">
             <ul>
               <li class="sel-item" data-filter="*">All</li>
               <li data-filter=".web-design">Web Design</li>
               <li data-filter=".application">Applications</li>
               <li data-filter=".development">Development</li>
             </ul>
-          </div>
+          </div> -->
         </div>
         <!--portfolio items-->
         <div class="row portfolio-items">
@@ -331,6 +317,10 @@
       >
         <path d="M0,100c0,0,419-178,693-49.5S1400,0,1400,0v100H0z" />
       </svg>
+
+      <div class="view-more-button">
+        <a class="main-button" href="portfolio.html">View More</a>
+      </div>
     </section>
     <!--Portfolio Section End-->
 
@@ -339,16 +329,17 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h2 class="text-uppercase marbtm-60">What i Do</h2>
+            <h2 class="text-uppercase marbtm-60">What I Do</h2>
           </div>
           <!--Service items-->
           <div class="col-lg-4 col-md-6 wow fadeInDown" data-wow-delay="0.2s">
             <div class="services-item">
               <i class="fa fa-code fa-2x"></i>
-              <h3>Web Design</h3>
+              <h3>Full Stack Development</h3>
               <p>
-                Amet illo quos cumque reiciendis vitae dolorum Quas delectus
-                corporis nihil omnis nam labore excepturi error.
+                Expertise in building end-to-end web applications using modern
+                technologies like React, Node.js, and Python. Delivering
+                scalable and efficient solutions for complex business needs.
               </p>
             </div>
           </div>
@@ -356,11 +347,12 @@
           <!--Service items-->
           <div class="col-lg-4 col-md-6 wow fadeInDown" data-wow-delay="0.4s">
             <div class="services-item">
-              <i class="fa fa-cube fa-2x"></i>
-              <h3>Development</h3>
+              <i class="fa fa-database fa-2x"></i>
+              <h3>Database Design</h3>
               <p>
-                Amet illo quos cumque reiciendis vitae dolorum Quas delectus
-                corporis nihil omnis nam labore excepturi error.
+                Skilled in designing and optimizing both SQL and NoSQL
+                databases. Creating efficient data structures and implementing
+                robust database solutions for optimal performance.
               </p>
             </div>
           </div>
@@ -368,11 +360,12 @@
           <!--Service items-->
           <div class="col-lg-4 col-md-6 wow fadeInDown" data-wow-delay="0.6s">
             <div class="services-item">
-              <i class="fa fa-camera fa-2x"></i>
-              <h3>Graphics Design</h3>
+              <i class="fa fa-cloud fa-2x"></i>
+              <h3>Cloud Solutions</h3>
               <p>
-                Amet illo quos cumque reiciendis vitae dolorum Quas delectus
-                corporis nihil omnis nam labore excepturi error.
+                Experience with AWS and cloud infrastructure, implementing
+                serverless architectures, and managing cloud resources for
+                scalable and cost-effective deployments.
               </p>
             </div>
           </div>
@@ -381,10 +374,11 @@
           <div class="col-lg-4 col-md-6 wow fadeInDown" data-wow-delay="0.8s">
             <div class="services-item">
               <i class="fa fa-mobile-phone fa-2x"></i>
-              <h3>Responsive Design</h3>
+              <h3>Responsive Web Apps</h3>
               <p>
-                Amet illo quos cumque reiciendis vitae dolorum Quas delectus
-                corporis nihil omnis nam labore excepturi error.
+                Creating mobile-first, responsive web applications that provide
+                seamless user experience across all devices and screen sizes
+                using modern frameworks.
               </p>
             </div>
           </div>
@@ -392,11 +386,12 @@
           <!--Service items-->
           <div class="col-lg-4 col-md-6 wow fadeInDown" data-wow-delay="1.0s">
             <div class="services-item">
-              <i class="fa fa-thumbs-up fa-2x"></i>
-              <h3>Seo Friendly</h3>
+              <i class="fa fa-server fa-2x"></i>
+              <h3>API Development</h3>
               <p>
-                Amet illo quos cumque reiciendis vitae dolorum Quas delectus
-                corporis nihil omnis nam labore excepturi error.
+                Developing secure and efficient RESTful APIs, implementing
+                authentication systems, and creating comprehensive documentation
+                for seamless integration.
               </p>
             </div>
           </div>
@@ -404,11 +399,12 @@
           <!--Service items-->
           <div class="col-lg-4 col-md-6 wow fadeInDown" data-wow-delay="1.2s">
             <div class="services-item">
-              <i class="fa fa-life-ring fa-2x"></i>
-              <h3>Support</h3>
+              <i class="fa fa-cogs fa-2x"></i>
+              <h3>DevOps & CI/CD</h3>
               <p>
-                Amet illo quos cumque reiciendis vitae dolorum Quas delectus
-                corporis nihil omnis nam labore excepturi error.
+                Setting up automated deployment pipelines, implementing
+                continuous integration practices, and maintaining development
+                infrastructure for efficient workflow.
               </p>
             </div>
           </div>
@@ -522,17 +518,17 @@
               <!--Contact Item-->
               <div class="contact-item">
                 <h4>Address</h4>
-                <p>1324 Lorem Ipsum, USA</p>
+                <p>Kurunegala, Sri Lanka</p>
               </div>
               <!--Contact Item-->
               <div class="contact-item">
                 <h4>Email</h4>
-                <p>example@example.com</p>
+                <p>kithminasiriwardana13@gmail.com</p>
               </div>
               <!--Contact Item-->
               <div class="contact-item">
                 <h4>Telephone</h4>
-                <p>+00 123 456 789</p>
+                <p>+94 767 593 818</p>
               </div>
             </div>
           </div>
@@ -543,38 +539,44 @@
           >
             <h2 class="text-right">Send Us A Message</h2>
             <!--form start-->
-            <form id="contactForm" method="POST" action="mail.php">
+            <form id="contactForm">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <!--name-->
+                  <!-- Name -->
                   <input
                     type="text"
                     class="form-control con-validate"
                     id="contact-name"
+                    name="user_name"
                     placeholder="Name"
                     minlength="3"
+                    required
                   />
                 </div>
                 <div class="col-md-6 form-group">
-                  <!--email-->
+                  <!-- Email -->
                   <input
                     type="email"
                     class="form-control con-validate"
                     id="contact-email"
+                    name="user_email"
                     placeholder="Email"
+                    required
                   />
                 </div>
                 <div class="col-md-12 form-group">
-                  <!--message box-->
+                  <!-- Message -->
                   <textarea
                     class="form-control con-validate"
                     id="contact-message"
+                    name="message"
                     placeholder="Message"
                     rows="4"
+                    required
                   ></textarea>
                 </div>
                 <div class="col-md-12">
-                  <button id="contact-submit" class="main-button">
+                  <button id="contact-submit" type="submit" class="main-button">
                     Send Message
                   </button>
                 </div>
@@ -616,8 +618,7 @@
         <div class="col-md-12">
           <!--copyright-->
           <p>
-            Copyright &copy; 2018 Adrian Portfolio, All Right Reserved.<br />
-            Created By cosmos-themes.
+            Copyright &copy; 2025 Kithmina Siriwardana<br />All Right Reserved.
           </p>
         </div>
       </div>
