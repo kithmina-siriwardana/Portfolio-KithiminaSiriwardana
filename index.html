@@ -50,6 +50,11 @@
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
     ></script>
     <script src="./js/email.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
     <!--Preloader Start-->
@@ -64,9 +69,9 @@
     <nav class="navbar navbar-expand-md navbar-dark">
       <div class="container">
         <!--Logo-->
-        <a class="navbar-brand" href="#"
-          ><img src="images/logo/logo.png" alt="logo"
-        /></a>
+        <!-- <a class="navbar-brand" href="#"
+          ><img src="images/logo/logo-ks-white.png" alt="logo"
+        /></a> -->
 
         <button
           class="navbar-toggler"
@@ -97,7 +102,7 @@
               <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#blog">Blog</a>
+              <a class="nav-link" href="#blog">Skills</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -154,66 +159,42 @@
           >
             <h2 class="text-uppercase marbtm-40">About Me</h2>
             <p>
-              I’m <strong>Kithmina Siriwardana</strong>. I am a graduate of
-              SLIIT, a passionate freelancer, web developer, and software
-              engineer. With a strong dedication to my work, I have honed the
-              skills and expertise necessary to deliver successful and
-              innovative projects that meet your needs.
+              I'm <strong>Kithmina Siriwardana</strong>. I am a
+              <strong>Software Engineering Graduate</strong> at SLIIT, a
+              passionate freelancer, web developer, and software engineer. With
+              a strong dedication to my work, I have honed the skills and
+              expertise necessary to deliver successful and innovative projects
+              that meet your needs.
             </p>
           </div>
         </div>
         <div class="row">
-          <div class="col-xl-10 offset-xl-1 col-lg-12 about-info-container">
-            <div class="row">
-              <!--about left section-->
-              <div class="col-lg-6 col-md-12 about-info">
-                <div class="info-item">
-                  <!--about image-->
-                  <img src="images/about.jpg" alt="" />
-                </div>
-                <div class="info-item">
-                  <p><span>Name : </span>Kithmina Siriwardana</p>
-                </div>
-                <div class="info-item">
-                  <p><span>Birthday : </span>13 June 2001</p>
-                </div>
-                <div class="info-item">
-                  <p><span>Phone Number : </span>(+94) 767 593 818</p>
-                </div>
-                <div class="info-item">
-                  <p><span>E-Mail : </span>kithminasiriwardana13@gmail.com</p>
-                </div>
+          <div
+            class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 about-info-container"
+          >
+            <div class="about-info">
+              <div class="info-item">
+                <!--about image-->
+                <img src="images/logo/about.png" alt="" />
               </div>
-              <!--about skills section-->
-              <div class="col-lg-5 col-md-12 about-skills">
-                <h3 class="text-uppercase">Skills</h3>
-                <div class="skills-grid">
-                  <div class="skill-item">
-                    <i class="fab fa-js" style="color: #f7df1e"></i>
-                    <h4>JavaScript</h4>
-                  </div>
-                  <div class="skill-item">
-                    <i class="fab fa-react" style="color: #61dafb"></i>
-                    <h4>React</h4>
-                  </div>
-                  <div class="skill-item">
-                    <i class="fab fa-node-js" style="color: #68a063"></i>
-                    <h4>Node.js</h4>
-                  </div>
-                  <div class="skill-item">
-                    <i class="fab fa-html5" style="color: #e34c26"></i>
-                    <h4>HTML5</h4>
-                  </div>
-                  <div class="skill-item">
-                    <i class="fab fa-aws" style="color: #ff9900"></i>
-                    <h4>AWS</h4>
-                  </div>
-                  <div class="skill-item">
-                    <i class="fab fa-git" style="color: #f05032"></i>
-                    <h4>Git</h4>
-                  </div>
-                </div>
+              <div class="info-item">
+                <p><span>Name : </span>Kithmina Siriwardana</p>
               </div>
+              <div class="info-item">
+                <p><span>Age : </span>23 Years</p>
+              </div>
+              <div class="info-item">
+                <p><span>Address : </span>Kurunegala, Sri Lanka</p>
+              </div>
+              <div class="info-item">
+                <p><span>Phone Number : </span>(+94) 767 593 818</p>
+              </div>
+              <div class="info-item">
+                <p><span>E-Mail : </span>kithminasiriwardana13@gmail.com</p>
+              </div>
+            </div>
+            <div class="cv-button">
+              <a class="cv-btn" href="./assets/CV.pdf">Download CV</a>
             </div>
           </div>
         </div>
@@ -236,74 +217,128 @@
     <!--Portfolio Section Start-->
     <section id="portfolio" class="wave-primary">
       <div class="container">
-        <div class="portfolio-header padbtm-40">
-          <h2 class="text-uppercase">Portfolio</h2>
-          <!-- <div class="portfolio-filter">
-            <ul>
-              <li class="sel-item" data-filter="*">All</li>
-              <li data-filter=".web-design">Web Design</li>
-              <li data-filter=".application">Applications</li>
-              <li data-filter=".development">Development</li>
-            </ul>
-          </div> -->
+        <h2 class="text-uppercase padbtm-40 text-center">Portfolio</h2>
+        <div class="row">
+          <a
+            class="blog-post col-lg-4 col-md-6 wow fadeInLeft"
+            data-wow-delay="0.3s"
+          >
+            <div class="post-image">
+              <img src="images/portfolio/p1.png" alt="" />
+            </div>
+            <h3 class="post-title">Optical Insight</h3>
+            <p class="post-body">
+              Optical Insight is an advanced web-based platform that leverages
+              hybrid deep-learning models to detect eye diseases. Designed for
+              clinical use, it offers a seamless interface for uploading retinal
+              images and receiving accurate, AI-powered diagnostic insights in
+              real time.
+            </p>
+            <div class="post-meta">
+              <span>Technologies: </span>- Next.js, Nest.js, Python Flask,
+              MongoDB, Deep Learning (ResNet-50, VGG16, YOLO) LLM, Open CV,
+              Google Cloud Run, Docker, AWS Amplify, S3
+            </div>
+          </a>
+
+          <a
+            class="blog-post col-lg-4 col-md-6 wow fadeInUp"
+            data-wow-delay="0.3s"
+          >
+            <div class="post-image">
+              <img src="images/portfolio/p2.png" alt="" />
+            </div>
+            <h3 class="post-title">QuickFindLK</h3>
+            <p class="post-body">
+              A comprehensive digital marketplace connecting service providers
+              with customers across Sri Lanka. The platform streamlines the
+              process of finding and offering professional services in key
+              categories, making it easier for customers to find skilled
+              professionals and for service providers to reach their target
+              market.
+            </p>
+            <div class="post-meta">
+              <span>Technologies: </span>- Next.js, PostgreSQL, Prisma, AWS
+              Amplify AWS RDS
+            </div>
+          </a>
+
+          <a
+            class="blog-post col-lg-4 col-md-6 wow fadeInRight"
+            data-wow-delay="0.3s"
+          >
+            <div class="post-image">
+              <img src="images/portfolio/p3.png" alt="" />
+            </div>
+            <h3 class="post-title">Tech Bridge Lanka</h3>
+            <p class="post-body">
+              A web application that helps the Sri Lankan community to reduce
+              the digital divide in Sri Lanka.
+            </p>
+            <div class="post-meta">
+              <span>Technologies: </span>- MERN Stack, React Bootstrap, HTML,
+              CSS, Jest
+            </div>
+          </a>
         </div>
-        <!--portfolio items-->
-        <div class="row portfolio-items">
-          <!--item-->
-          <div
-            class="col-lg-4 col-md-6 single-item application wow fadeInUp"
-            data-wow-delay="0.2s"
+        <div class="row">
+          <a
+            class="blog-post col-lg-4 col-md-6 wow fadeInLeft"
+            data-wow-delay="0.3s"
           >
-            <a class="popup" href="images/portfolio/item-1.jpg">
-              <img src="images/portfolio/item-1.jpg" alt="" />
-            </a>
-          </div>
-          <!--item-->
-          <div
-            class="col-lg-4 col-md-6 single-item web-design wow fadeInUp"
-            data-wow-delay="0.4s"
+            <div class="post-image">
+              <img src="images/portfolio/p4.png" alt="" />
+            </div>
+            <h3 class="post-title">PickPay: Online E-commerce Platform</h3>
+            <p class="post-body">
+              PickPay is an innovative e-commerce platform offering a seamless
+              experience through a customer-friendly mobile app and a
+              vendor-focused web app.
+            </p>
+            <div class="post-meta">
+              <span>Technologies: </span>- React, ASP.NET Core, Bootstrap,
+              MongoDB, Kotlin
+            </div>
+          </a>
+
+          <a
+            class="blog-post col-lg-4 col-md-6 wow fadeInUp"
+            data-wow-delay="0.3s"
           >
-            <a class="popup" href="images/portfolio/item-2.jpg">
-              <img src="images/portfolio/item-2.jpg" alt="" />
-            </a>
-          </div>
-          <!--item-->
-          <div
-            class="col-lg-4 col-md-6 single-item web-design wow fadeInUp"
-            data-wow-delay="0.6s"
+            <div class="post-image">
+              <img src="images/portfolio/p5.png" alt="" />
+            </div>
+            <h3 class="post-title">Collaborative Shopping Platform</h3>
+            <p class="post-body">
+              A buying and selling web application that interacts with both
+              sellers and buyers in one place.
+            </p>
+            <div class="post-meta">
+              <span>Technologies: </span>- MERN Stack, Material UI, HTML, CSS,
+              Docker, Kubernetes
+            </div>
+          </a>
+
+          <a
+            class="blog-post col-lg-4 col-md-6 wow fadeInRight"
+            data-wow-delay="0.3s"
           >
-            <a class="popup" href="images/portfolio/item-3.jpg">
-              <img src="images/portfolio/item-3.jpg" alt="" />
-            </a>
-          </div>
-          <!--item-->
-          <div
-            class="col-lg-4 col-md-6 single-item development wow fadeInUp"
-            data-wow-delay="0.8s"
-          >
-            <a class="popup" href="images/portfolio/item-4.jpg">
-              <img src="images/portfolio/item-4.jpg" alt="" />
-            </a>
-          </div>
-          <!--item-->
-          <div
-            class="col-lg-4 col-md-6 single-item application wow fadeInUp"
-            data-wow-delay="1s"
-          >
-            <a class="popup" href="images/portfolio/item-5.jpg">
-              <img src="images/portfolio/item-5.jpg" alt="" />
-            </a>
-          </div>
-          <!--item-->
-          <div
-            class="col-lg-4 col-md-6 single-item web-design wow fadeInUp"
-            data-wow-delay="1.2s"
-          >
-            <a class="popup" href="images/portfolio/item-6.jpg">
-              <img src="images/portfolio/item-6.jpg" alt="" />
-            </a>
-          </div>
+            <div class="post-image">
+              <img src="images/portfolio/p6.png" alt="" />
+            </div>
+            <h3 class="post-title">EduHub Mobile Application</h3>
+            <p class="post-body">
+              EduHub is a mobile application that helps users improve their
+              general knowledge by participating in quizzes..
+            </p>
+            <div class="post-meta">
+              <span>Technologies: </span>- Android Studio, Java, Firebase
+            </div>
+          </a>
         </div>
+        <!-- <div class="view-more-button">
+          <a class="main-button" href="portfolio.html">View More</a>
+        </div> -->
       </div>
       <!--Creative Background Wave-->
       <svg
@@ -317,10 +352,6 @@
       >
         <path d="M0,100c0,0,419-178,693-49.5S1400,0,1400,0v100H0z" />
       </svg>
-
-      <div class="view-more-button">
-        <a class="main-button" href="portfolio.html">View More</a>
-      </div>
     </section>
     <!--Portfolio Section End-->
 
@@ -428,68 +459,116 @@
     <!--Blog Section Start-->
     <section id="blog" class="wave-primary">
       <div class="container">
-        <h2 class="text-uppercase padbtm-40 text-center">Latest News</h2>
+        <h2 class="text-uppercase text-center">Technical Skills</h2>
         <div class="row">
-          <!--blog item-->
-          <a
-            class="blog-post col-lg-4 col-md-6 wow fadeInLeft"
-            data-wow-delay="0.3s"
-            href="single-blog.html"
-          >
-            <div class="post-image">
-              <img src="images/blog/img-1.jpg" alt="" />
+          <!-- Programming Languages -->
+          <div class="col-lg-4 col-md-6">
+            <h3 class="category-title">Programming Languages</h3>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <i class="fab fa-js" style="color: #007acc"></i>
+                <h4>TypeScript</h4>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-js" style="color: #f7df1e"></i>
+                <h4>JavaScript</h4>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-python" style="color: #3776ab"></i>
+                <h4>Python</h4>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-java" style="color: #007396"></i>
+                <h4>Java</h4>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-php" style="color: #777bb4"></i>
+                <h4>PHP</h4>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-code" style="color: #a8b9cc"></i>
+                <h4>C</h4>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-code" style="color: #00599c"></i>
+                <h4>C++</h4>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-cuttlefish" style="color: #68217a"></i>
+                <h4>C#</h4>
+              </div>
             </div>
-            <h3 class="post-title">Blog Heading</h3>
-            <p class="post-body">
-              Lorem sit mollitia deserunt ea at. Laudantium nostrum asperiores
-              nulla tempora modi eveniet est Consequuntur repellat totam itaque
-              earum optio hic nulla quia.
-            </p>
-            <div class="post-meta">
-              <span>John Doe </span>- 21 December 2018
-            </div>
-          </a>
+          </div>
 
-          <!--blog item-->
-          <a
-            class="blog-post col-lg-4 col-md-6 wow fadeInUp"
-            data-wow-delay="0.3s"
-            href="single-blog.html"
-          >
-            <div class="post-image">
-              <img src="images/blog/img-2.jpg" alt="" />
+          <!-- Frameworks & Libraries -->
+          <div class="col-lg-4 col-md-6">
+            <h3 class="category-title">Frameworks & Libraries</h3>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <i class="fab fa-react" style="color: #61dafb"></i>
+                <h4>React</h4>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-microsoft" style="color: #512bd4"></i>
+                <h4>.NET</h4>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-node-js" style="color: #339933"></i>
+                <h4>Node.js</h4>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-sass" style="color: #cc6699"></i>
+                <h4>Sass</h4>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-angular" style="color: #dd0031"></i>
+                <h4>Angular</h4>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-flask" style="color: #d6850a"></i>
+                <h4>Flask</h4>
+              </div>
             </div>
-            <h3 class="post-title">Blog Heading</h3>
-            <p class="post-body">
-              Lorem sit mollitia deserunt ea at. Laudantium nostrum asperiores
-              nulla tempora modi eveniet est Consequuntur repellat totam itaque
-              earum optio hic nulla quia.
-            </p>
-            <div class="post-meta"><span>John Doe </span>- 1 July 2018</div>
-          </a>
+          </div>
 
-          <!--blog item-->
-          <a
-            class="blog-post col-lg-4 col-md-6 wow fadeInRight"
-            data-wow-delay="0.3s"
-            href="single-blog.html"
-          >
-            <div class="post-image">
-              <img src="images/blog/img-3.jpg" alt="" />
+          <!-- Tools & Technologies -->
+          <div class="col-lg-4 col-md-6">
+            <h3 class="category-title">Tools & Technologies</h3>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <i class="fab fa-aws" style="color: #ff9900"></i>
+                <h4>AWS</h4>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-docker" style="color: #2496ed"></i>
+                <h4>Docker</h4>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-git-alt" style="color: #f05032"></i>
+                <h4>Git</h4>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-database" style="color: #47a248"></i>
+                <h4>MongoDB</h4>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-database" style="color: #4479a1"></i>
+                <h4>MySQL</h4>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-linux" style="color: #fcc624"></i>
+                <h4>Linux</h4>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-android" style="color: #3ddc84"></i>
+                <h4>Android</h4>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-fire" style="color: #ffca28"></i>
+                <h4>Firebase</h4>
+              </div>
             </div>
-            <h3 class="post-title">Blog Heading</h3>
-            <p class="post-body">
-              Lorem sit mollitia deserunt ea at. Laudantium nostrum asperiores
-              nulla tempora modi eveniet est Consequuntur repellat totam itaque
-              earum optio hic nulla quia.
-            </p>
-            <div class="post-meta">
-              <span>Jeff Doe </span>- 2 September 2018
-            </div>
-          </a>
-        </div>
-        <div class="view-more-button">
-          <a class="main-button" href="blog.html">View More</a>
+          </div>
         </div>
       </div>
       <!--Creative Background Wave-->

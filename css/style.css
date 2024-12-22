@@ -160,6 +160,7 @@ section {
 .main-button:hover,
 .main-button:focus {
   outline: none;
+  cursor: pointer;
 }
 
 .main-button.success {
@@ -178,6 +179,51 @@ section {
 }
 
 .main-button.error:hover {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.cv-btn {
+  text-decoration: none;
+  border: 1px solid #000;
+  color: #000;
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: transparent;
+}
+
+.cv-btn:hover {
+  border: 1px solid #000;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+}
+
+.cv-btn:hover,
+.cv-button:focus {
+  outline: none;
+}
+
+.cv-btn.success {
+  border-color: #28a745;
+  color: #28a745;
+}
+
+.cv-btn.success:hover {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.cv-btn.error {
+  border-color: #dc3545;
+  color: #dc3545;
+}
+
+.cv-btn.error:hover {
   background-color: #dc3545;
   color: #fff;
 }
@@ -538,7 +584,6 @@ body.loaded p {
 }
 
 /*============ 5. About Section ============*/
-
 #about {
   padding-top: 120px;
   padding-bottom: 160px;
@@ -547,8 +592,7 @@ body.loaded p {
 #about .about-info-container {
   background-color: #f3f3f3;
   margin-top: 20px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1),
     0 1px 2px rgba(0, 0, 0, 0.01);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.01);
@@ -564,111 +608,55 @@ body.loaded p {
 }
 
 #about .about-info-container .about-info {
-  text-align: right;
-  padding-right: 50px;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
+/* Keep the image centered */
 #about .about-info-container .about-info .info-item img {
   width: 100px;
   -webkit-border-radius: 90px;
   border-radius: 90px;
   border: 5px solid #fff;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+/* Modified for better left alignment */
 #about .about-info-container .about-info .info-item p {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  padding-left: 40px; /* Add some padding from the left */
 }
 
 #about .about-info-container .about-info .info-item span {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: #000;
+  min-width: 140px; /* Increased to accommodate longer labels */
+  display: inline-block;
+  text-align: left; /* Changed to left */
+  margin-right: 15px;
 }
 
-#about .about-info-container .about-skills {
-  padding-left: 50px;
-}
-
-#about .about-info-container .about-skills h3 {
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-#about .about-info-container .about-skills .progress-box {
-  margin-bottom: 20px;
-}
-
-#about .about-info-container .about-skills .progress-box p {
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  margin-bottom: 10px;
-  color: #000;
-}
-
-#about .about-info-container .about-skills .progress-box .progress {
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  height: 2px;
-}
-
-#about
-  .about-info-container
-  .about-skills
-  .progress-box
-  .progress
-  .progress-bar {
-  background-color: #616161;
-  -webkit-transition: width 1.5s ease;
-  -o-transition: width 1.5s ease;
-  transition: width 1.5s ease;
-  width: 0;
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
-  gap: 20px; /* Space between items */
-  text-align: center;
-}
-
-.skill-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.skill-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.skill-item i {
-  font-size: 30px; /* Smaller icon size */
-  margin-bottom: 10px;
-}
-
-.skill-item h4 {
-  font-size: 14px; /* Smaller text size */
-  font-weight: 600;
-  color: #333;
-}
-
+/* For mobile responsiveness */
 @media (max-width: 768px) {
-  .skills-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 items per row on tablets */
+  #about .about-info-container .about-info .info-item p {
+    flex-direction: column;
+    text-align: center;
+    padding-left: 0; /* Remove padding for mobile */
   }
-}
 
-@media (max-width: 480px) {
-  .skills-grid {
-    grid-template-columns: 1fr; /* 1 item per row on small screens */
+  #about .about-info-container .about-info .info-item span {
+    text-align: center;
+    margin-bottom: 5px;
+    margin-right: 0;
   }
 }
 
@@ -820,8 +808,7 @@ body.loaded p {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #000;
-  opacity: 0.3;
+  opacity: 0;
   z-index: 1;
   -webkit-transition: opacity 0.2s ease-in-out;
   -o-transition: opacity 0.2s ease-in-out;
@@ -829,7 +816,9 @@ body.loaded p {
 }
 
 .blog-post .post-image:hover:before {
-  opacity: 0;
+  background-color: #000;
+  opacity: 0.3;
+  cursor: pointer;
 }
 
 .blog-post .post-title {
@@ -843,13 +832,14 @@ body.loaded p {
 .blog-post .post-body {
   font-size: 15px;
   line-height: 25px;
+  text-align: justify;
 }
 
 .blog-post .post-meta {
   font-size: 13px;
   font-weight: 400;
   color: #b8b8b8;
-  float: right;
+  text-align: justify;
 }
 
 .blog-post .post-meta span {
@@ -863,6 +853,15 @@ body.loaded p {
 }
 
 .view-more-button a {
+  display: inline-block;
+}
+
+.cv-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cv-button a {
   display: inline-block;
 }
 
@@ -998,6 +997,66 @@ footer p {
 }
 
 /*============ 12. Blog Post Page Main Area ============*/
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+  padding: 15px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item i {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.skill-item h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.category-title {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Optional: Add some spacing between sections */
+.col-lg-4 {
+  margin-bottom: 30px;
+}
 
 #blog-posts-area,
 #single-blog-area {
