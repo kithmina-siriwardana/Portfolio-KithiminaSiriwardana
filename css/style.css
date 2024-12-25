@@ -642,21 +642,60 @@ body.loaded p {
   min-width: 140px; /* Increased to accommodate longer labels */
   display: inline-block;
   text-align: left; /* Changed to left */
-  margin-right: 15px;
+  margin-right: -25px;
 }
 
-/* For mobile responsiveness */
-@media (max-width: 768px) {
+/* Media query for screens below 768px */
+@media screen and (max-width: 767px) {
+  #about .about-info-container {
+    padding: 20px; /* Reduce padding */
+  }
+
+  #about .about-info-container .about-info {
+    padding: 0 10px; /* Reduce padding around the container */
+  }
+
+  #about .about-info-container .about-info .info-item {
+    padding-left: 0; /* Remove padding from the left */
+    margin-bottom: 10px; /* Adjust spacing between items */
+  }
+
   #about .about-info-container .about-info .info-item p {
-    flex-direction: column;
-    text-align: center;
-    padding-left: 0; /* Remove padding for mobile */
+    padding-left: 30px; /* Remove extra padding */
+    margin-bottom: 10px; /* Adjust spacing between paragraphs */
+    justify-content: flex-start; /* Align content to the left */
   }
 
   #about .about-info-container .about-info .info-item span {
-    text-align: center;
-    margin-bottom: 5px;
-    margin-right: 0;
+    min-width: 100px; /* Reduce minimum width for labels */
+    text-align: left; /* Ensure text aligns to the left */
+    margin-right: 20px; /* Adjust spacing between label and value */
+  }
+
+  #about .about-info-container .about-info .info-item img {
+    width: 80px; /* Reduce image size for smaller screens */
+    margin-bottom: 20px; /* Adjust spacing below the image */
+  }
+}
+
+/* Media query for screens below 515px */
+@media screen and (max-width: 515px) {
+  #about .about-info-container .about-info .info-item {
+    text-align: center; /* Center-align the entire info item */
+  }
+
+  #about .about-info-container .about-info .info-item p {
+    flex-direction: column; /* Stack span and value vertically */
+    align-items: center; /* Center-align content */
+    padding-left: 0; /* Remove left padding */
+    margin-bottom: 10px; /* Adjust spacing between items */
+  }
+
+  #about .about-info-container .about-info .info-item span {
+    margin-right: 0; /* Remove right margin */
+    min-width: auto; /* Reset min-width */
+    display: block; /* Ensure span takes a full line */
+    text-align: center; /* Center-align span text */
   }
 }
 
